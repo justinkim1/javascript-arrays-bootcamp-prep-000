@@ -9,34 +9,34 @@ function destructivelyAddElementToBeginningOfArray(array, element){
 }
 function addElementToEndOfArray(array, element){
   [...myArray, 'foo'];
-  return myArray
+  return array
 }
 function destructivelyAddElementToEndOfArray(array, element){
-  myArray.push('foo');
-  return myArray
+  myArray.push(element);
+  return array
 }
 function accessElementInArray(array, index){
   myArray = [1];
-  return myArray[0];
+  return array[0];
   
 }
 function destructivelyRemoveElementFromBeginningOfArray(array, element){
   myArray = [1, 2 , 3, 4]
   myArray.shift(1)
-  return myArray
+  return array
 }
 function removeElementFromBeginningOfArray(array, element){
   myArray = [1, 2 , 3, 4]
   myArray.slice(1)
-  return myArray
+  return array
 }
 function destructivelyRemoveElementFromEndOfArray(array, element){
   myArray = [1, 2 , 3, 4]
   myArray.shift(-1)
-  return myArray
+  return array
 }
 function removeElementFromEndOfArray(){
   myArray = [1, 2 , 3, 4]
   myArray.slice(-1)
-  return myArray
+  return array
 }
