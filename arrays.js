@@ -29,12 +29,10 @@ function removeElementFromBeginningOfArray(array, element){
   return array
 }
 function destructivelyRemoveElementFromEndOfArray(array, element){
-  array = [1, 2 , 3, 4]
-  array.shift(-1)
+  array = array.slice(-1)
   return array
 }
 function removeElementFromEndOfArray(){
-  array = [1, 2 , 3, 4]
-  array.slice(-1)
+  array = array.slice(3)
   return array
 }
