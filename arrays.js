@@ -4,12 +4,10 @@ function addElementToBeginningOfArray(array, element){
   return myArray
 }
 function destructivelyAddElementToBeginningOfArray(array, element){
-  myArray = [1]
-  myArray.unshift('foo')
-  return myArray
+  array.unshift(element)
+  return array
 }
 function addElementToEndOfArray(array, element){
-  myArray = [1];
   [...myArray, 'foo'];
   return myArray
 }
